@@ -1,0 +1,33 @@
+ul.pagination {
+    display: inline-block;
+    padding: 0 36%;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    border-radius: 30%;
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid black;
+    margin: 0 4px;
+}
+
+ul.pagination li a.active {
+    background-color: #3b080f;
+    border-radius: 40%;
+    color: white;
+    border: 1px solid #3b080f;
+    opacity: 1;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: #bbb;}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
